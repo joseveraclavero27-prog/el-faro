@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Faro - Deporte</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; line-height: 1.5; }
+    header, nav, footer { padding: 12px 16px; }
+    header { display: flex; align-items: center; gap: 12px; background: #0d1b2a; color: #fff; }
+    header img { height: 48px; width: 48px; object-fit: contain; }
+    nav { background: #e5eaf0; display: flex; gap: 16px; }
+    nav a { text-decoration: none; color: #0d1b2a; font-weight: 600; }
+    main { padding: 16px; max-width: 1100px; margin: auto; }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    th, td { border: 1px solid #cfd8dc; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f5f7fa; }
+    footer { background: #0d1b2a; color: #fff; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logotipo El Faro" />
+    <div>
+      <h1>El Faro</h1>
+      <p style="margin:0">Sección Deporte</p>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="deporte.html" aria-current="page">Deporte</a>
+    <a href="negocios.html">Negocios</a>
+  </nav>
+
+  <main>
+    <section aria-labelledby="tit-deporte">
+      <h2 id="tit-deporte">Noticias de Deporte</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Equipo local gana torneo regional</td>
+            <td>Fútbol</td>
+            <td>Victoria en penales tras un empate 1-1 en tiempo reglamentario.</td>
+          </tr>
+          <tr>
+            <td>Maratón solidaria reúne a 2.000 corredores</td>
+            <td>Atletismo</td>
+            <td>El evento recaudó fondos para escuelas deportivas formativas.</td>
+          </tr>
+          <tr>
+            <td>Nueva pista para ciclismo de montaña</td>
+            <td>Ciclismo</td>
+            <td>Se inaugura circuito con zonas técnicas y miradores panorámicos.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>Periódico El Faro — 2026</small>
+  </footer>
+</body>
+</html>

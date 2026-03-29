@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Faro - Negocios</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; line-height: 1.5; }
+    header, nav, footer { padding: 12px 16px; }
+    header { display: flex; align-items: center; gap: 12px; background: #0d1b2a; color: #fff; }
+    header img { height: 48px; width: 48px; object-fit: contain; }
+    nav { background: #e5eaf0; display: flex; gap: 16px; }
+    nav a { text-decoration: none; color: #0d1b2a; font-weight: 600; }
+    main { padding: 16px; max-width: 1100px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 16px; }
+    article { border: 1px solid #cfd8dc; border-radius: 8px; padding: 12px; background: #fff; }
+    .categoria { font-size: 0.9rem; color: #546e7a; margin: 0; }
+    footer { background: #0d1b2a; color: #fff; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logotipo El Faro" />
+    <div>
+      <h1>El Faro</h1>
+      <p style="margin:0">Sección Negocios</p>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="deporte.html">Deporte</a>
+    <a href="negocios.html" aria-current="page">Negocios</a>
+  </nav>
+
+  <main>
+    <section aria-labelledby="tit-negocios">
+      <h2 id="tit-negocios">Negocios y Emprendimientos</h2>
+      <div class="grid">
+        <article>
+          <h3>Cooperativa amplía red de proveedores</h3>
+          <p class="categoria">Emprendimiento</p>
+          <p>La organización incorpora microproductores para aumentar la oferta de temporada.</p>
+        </article>
+        <article>
+          <h3>Startup local lanza app de reparto sostenible</h3>
+          <p class="categoria">Innovación</p>
+          <p>El servicio prioriza vehículos eléctricos y rutas optimizadas para reducir huella.</p>
+        </article>
+        <article>
+          <h3>Capacitación gratuita para pymes</h3>
+          <p class="categoria">Formación</p>
+          <p>Programa abre cupos en marketing digital y comercio electrónico.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Periódico El Faro — 2026</small>
+  </footer>
+</body>
+</html>
